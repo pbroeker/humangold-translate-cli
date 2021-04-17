@@ -1,0 +1,258 @@
+{
+    "LANGUAGE": "Language",
+    "GERMAN": "German",
+    "ENGLISCH": "English",
+    "NEXT": "Next",
+    "CONTINUE": "Continue",
+    "TO_RESULTS": "To your results",
+    "YES": "Yes",
+    "NO": "No",
+    "INTRODUCTION": {
+        "GREETING": "Dear Mrs. and Mr.",
+        "INFORMATION_1": "Humangold offers high quality questionnaires to evaluate the psychological health of colleagues and coworkers.",
+        "INFORMATION_2": "Read more about it on our"
+    },
+    "ZAGG": {
+        "LINK": {
+            "GREETING": "Welcome",
+            "PROMPT": "Please provide your code for the resilience-questionnaire:",
+            "INVALID": "You provided an invalid code.",
+            "EXPIRED": "You provided an expired code.",
+            "TIME": "The survey take about 9:45 minutes.",
+            "VALID": "You used a permanently valid code.",
+            "CLIPBOARD_1": "(On click the code will be copied to the clipboard.)",
+            "CLIPBOARD_2": "(On click the survey-code will be copied to the clipboard)",
+            "CODE": "Survey-Code:", 
+            "RESULTS_CODE": "If you would like to check the results once again later on, you have to write down both codes. Use the first code on the main-page and the survey code on the second page.",
+            "CODE_END_1": "We will only provide the survey code at the end of the questionnaire.",
+            "CODE_END_2": "If you don't write down the codes, you may not be able to have access to the results later on.",
+            "CODE_END_3": "Please write down this code, if you plan to check your results once more after taking part in the survey.",
+            "PRE_INFORMATION": "Advance Information",
+            "WELCOME_1": "Since 2014 all employers are by law obliged to implement a psycholical risk assessment for all employees. These serve the assessment of the working environment and health risks for workers. At the same time they are an opportunity to measure the happiness of the employees and company culture to ensure a good working environment.",
+            "WELCOME_2": "We use a screening-technique in which the employees provide information about their workplace and help to identify problem areas. Based on this information we will provide recommendations. By law the employer needs to diagnose these health risks and protect their employees from any risk. Our work doesn't end with identifying these risks but include recommendations, acting uppon these and evaluating their effectiveness.",
+            "WELCOME_3": "The employees are obliged to contribute to measures of work-safety. Nonetheless, it should not be a chore but an opportunity to participate actively in shaping their workplaces.",
+            "PARTICIPANT_NEW": "New participent",
+            "PARTICIPANT_CONTINUE": "Continue/Results",
+            "CHECK_PROMPT": "Please agree with both statements first.",
+            "CHECK_NEW_1": "I am taking part in this survey for the first time.",
+            "CHECK_NEW_2": "I took this survey before and want to finish it or see my results once again.",
+            "CHECK_NEW_3": "I take part in the assessment by survey and agree with the use of my anonymous data in this survey. ",
+            "CHECK_BUTTON": "Start survey",
+            "DISCLAIMER": "To protect your data, we created a random and personal participation-code."
+        },
+        "SURVEY": {
+            "THANKS": "Thank you for taking the survey.",
+            "SUCCESS": "You finished the survey successfully."
+        },
+        "VERIFY": {
+            "CHECKING": "Checking user code"
+        },
+        "WELCOME": {
+            "TITLE": "Resilience meter Online",
+            "GREETING": "Welcome to the resilience meter online.",
+            "EXPLANATION": "Please take a few minutes to relate to the following statements. They are about your personal standards, values and attributes, that influence your behavious and wellbeing in different situations. Please check for each of the statements, to what extent they apply to you. Be honest and best answer from your gut feeling.",
+            "DISCLAIMER": "We will treat your data confidential and third parties won't have any access to them.",
+            "QUESTIONS": "If you have any questions, please reach out to us."
+        }
+    },
+    "LINK": {
+        "CODE" : {
+            "PERS_CODE": "Your personal participation code."
+        }
+    },
+    "INFORMATION": {
+        "CONTAINER": {
+            "HEADER": "User informations",
+            "GREETING": "Dear customer,",
+            "INTRO": "Thank you for taking the time to fill out this questionnaire.\nYour answers will be saved and encrypted. Also the company \"Humangold\", which is carrying out this survey, cannot link any data to specific persons. You superiors won't even know if you took part in the questionnaire or not. The analysis of the data doesn't include single employers but always whole groups of people. Therefore it will never be possible to link any data back to a single person.\nPlease answer the following questions. They will serve to improve the workplace for you and your colleagues. Your company will get suggestions to improve the situation at the workplace. By law your employer has to take action, if there is a potential risk for your health at your work. By filling out the following form, you agree that your data is used to assess the health risk at work for your workgroup.",
+            "MOTIV": "Take the chance to improce your workplace!",
+            "BIO": "Biography",
+            "CHOOSE": "Please choose",
+            "ADD_QUALIFIKATION": "Additional qualification",
+            "WORK_GENERAL": "Questions regarding work - General",
+            "WORK_TASK" : "Questions regarding work - Tasks",
+            "WORK_TOOLS": "Questions regarding work - Tools",
+            "WORK_PROCESSES": "Questions regarding work - Processes",
+            "TASK": "Tasks",
+            "MOST": "Most",
+            "OFTEN": "Often",
+            "RARELY": "Rarely",
+            "NEVER": "Never",
+            "AGREE": "You agree?",
+            "FILLOUT_ALL": "Please fill out all fields, marked with *.",
+            "PROCEED": "Proceed to the questionnaire",
+            "TOOLS": "Tools"        
+        }
+    },
+    "MODEL_DATA" : {
+        "Alter": "Age",
+        "Abteilung": "Department",
+        "Bereich der Tätigkeit": "Area of work",
+        "Geschlecht": "Gender",
+        "Höchster Bildungsabschluss": "Highest degree",
+        "Anstellungsverhältnis": "Type of contract",
+        "Geforderte formale Qualifikation für Ihren Arbeitsplatz": "Required qualification for your area of work",
+        "Berufsbezeichnung": "Occupation",
+        "Ich habe Personalverantwortung": "I am responsible for workers",
+        "Meistverwendetes Arbeitsverfahren": "Most used working procedure ",
+        "male" : "Male",
+        "female": "Female",
+        "diverse": "Diverse",
+        "none": "No Apprenticeship",
+        "apprenticeship": "Apprenticeship",
+        "higher": "University",
+        "perpetualFullTime": "Unlimited - Full-time",
+        "perpetualPartTime": "Unlimited - Part-time",
+        "temporaryFullTime": "Limited - Full-time",
+        "temporaryPartTime": "Limited - Part-time",
+        "teach": "Teaching",
+        "supervise": "Supervise",
+        "social": "Social services",
+        "consult": "Advising",
+        "craft": "Craftmanship",
+        "produce": "Production",
+        "repair": "Repairs",
+        "maintain": "Maintenance",
+        "manage": "Management",
+        "instruct": "Guide",
+        "plan": "Planing / Organising",
+        "control": "Controlling",
+        "creative": "Creative work",
+        "research": "Research and Development",
+        "it": "IT-Services",
+        "other": "Others",
+        "JOB_TITLE": "Please specify Apprenticeship",
+        "EQUIPMENT": {
+            "simple": {
+                "viewValue": "Simple, manual tools",
+                "details": "(i.e.: Hammer, Brush,...)"
+            },
+            "devices": {
+                "viewValue": "Equipment and fixtures",
+                "details": "(i.e.: Microscope,...)"
+            },
+            "machines": {
+                "viewValue": "Simple machines and devices",
+                "details": "(i.e.: Stove, Drillingmachine...)"
+            },
+            "complex": {
+                "viewValue": "Complexe machines & technical systems",
+                "details": "(i.e.: PC, Truck, CNC-Machine ...)"
+            }
+        },
+        "PROCEDURES": {
+            "standard": "Standardised procedures which don't change",
+            "select": "Chosing a procedure from several options",
+            "complex": "I work by complex specifications which change situational",
+            "self": "I don't have any specifications and decide by myself"
+        }
+    },
+    "SURVEY": {
+        "ANSWERS": {
+            "ja": "yes",
+            "eher ja": "rather yes",
+            "eher nein": "rather no",
+            "nein": "no",
+            "Trifft gar nicht zu": "Trifft gar nicht zu",
+            "Trifft überwiegend nicht zu": "Trifft überwiegend nicht zu",
+            "Trifft eher zu": "Trifft eher zu",
+            "Trifft ehe nicht zu": "Trifft ehe nicht zu",
+            "Trifft überwiegend zu": "Trifft überwiegend zu",
+            "Trifft völlig zu": "Trifft völlig zu",
+            "vollkommen OK": "vollkommen OK",
+            "nicht beanspruchend": "nicht beanspruchend",
+            "sehr beanspruchend": "sehr beanspruchend",
+            "beranspruchend": "beranspruchend"
+        },
+        "QUESTIONS": {
+            "Ich kann den Inhalt meiner Tätigkeit beeinflussen.": "I can affect the content of my assignments.",
+            "Bei meiner Tätigkeit muss ich wissen, wie sich meine Aufgaben in die der gesamten Abteilung einordnen.": "At my job I have to know how my work fits into the activities of the whole department.",
+            "Ich kann selbst festlegen, in welcher Weise/mit welchen Methoden ich meine Tätigkeit ausführe.": "I can decide how I work and which methods I use.",
+            "Ich kann selbst festlegen, in welcher Reihenfolge ich meine Arbeitsaufgaben erledige.": "I can define the order of my working activities.",
+            "Meinen Arbeitsablauf kann ich im Allgemeinen planen.": "I can plan my flow of work in general.",
+            "Ich kann den Umfang meiner Tätigkeit beeinflussen.": "I can influence the amount I have to do at work.",
+            "Ich weiß zu Arbeitsbeginn genau, was an diesem Tag auf mich zukommt.": "When I start working, I know exactly what I have to do during the day.",
+            "Ich kann selbst bestimmen, wann ich meine Arbeit unterbreche und eine Pause machen will.": "I can decide when I want to take a break.",
+            "Meine Tätigkeit erfordert es, häufig die Arbeitszeit zu überschreiten (mehr als 5 Stunden wöchentlich).": "My job often requires extended working time (more than 5 hours a week).",
+            "Ich kann mit entscheiden, mit welchen Kollegen ich zusammenarbeite.": "I have a vote in choosing the colleagues I work with.",
+            "Bei meiner Tätigkeit ist genau vorgeschrieben, welche Arbeitsmittel ich zu benutzen habe.": "At my job it is defined which equipment I have to use.",
+            "Es ist eindeutig festgelegt, mit wem und in welcher Weise ich zusammenarbeite.": "It is decided with whom and how I work with others.",
+            "Meine Arbeitsaufgaben sind sehr umfangreich.": "My working duties are very extensive.",
+            "In meiner Arbeit benutze ich viele verschiedene Arbeitsmethoden.": "My working duties are very extensive.",
+            "Meine Tätigkeit ist sehr abwechslungsreich.": "My activities at work are very diversified.",
+            "Meine Arbeitsaufgaben wechseln häufig.": "My work tasks change a lot.",
+            "Ich arbeite meistens mit anderen Kollegen direkt zusammen und muss meine Arbeit mit ihnen abstimmen.": "Mostly I work together with colleagues and have to cooperate with them.",
+            "Zu meinen Arbeitsaufgaben gehört der Umgang mit vielen Menschen (z. B. Kinder, Patienten, Kunden, Klienten).": "My working tasks require contact to many people (e. g. kids, patients, customers, clients).",
+            "In meiner Arbeit benutze ich viele verschiedene Arbeitsmittel.": "In my job I use various work equipment.",
+            "Zur Erfüllung meiner Arbeitsaufgaben sind einseitige, sich häufig wiederholende Sinnesleistungen erforderlich, z. B. ständiges Telefonieren, Dateneingabe und -kontrolle am Bildschirm.": "To get my job done I have to use my senses in a repeating uniform matter (e. g. calling, check data at pc).",
+            "Die Erfüllung meiner Arbeitsaufgaben erfordert vielseitige körperliche Aktivitäten.": "To get my job done I have to do various physical work.",
+            "Bei der Erfüllung meiner Arbeitsaufgaben muss ich ungünstige Zwangshaltungen einnehmen.": "My job sometimes requires a compulsive posture.",
+            "In meiner Tätigkeit kann ich anwenden, was ich im Verlaufe meines Berufslebens gelernt habe.": "At my job I can apply what I have learned earlier in my work life.",
+            "Um meine Arbeitsaufgaben erfüllen zu können, muss ich häufig Neues dazulernen.": "In order to get my job done I have to learn new things.",
+            "Meine Arbeitsaufgaben kann ich kontinuierlich ohne Ablenkungen erledigen.": "I can work in a flow without interruption.",
+            "In meiner Tätigkeit muss ich oft gleichzeitig mehrere Aufgaben erledigen.": "I have to work simultaneously at different tasks.",
+            "Wenn ich bei meiner Arbeit nicht aufmerksam bin, kann es leicht zu schwerwiegenden Fehlern kommen.": "When I am not concentrated at work, serious mistakes might occur.",
+            "Bei meiner Tätigkeit gibt es Phasen, in denen ich in Zeitnot gerate.": "Sometimes I do not have enough time at work.",
+            "Ich muss meine Arbeit eindeutig mit anderen Beschäftigten abstimmen, weil davon die Leistung der Abteilung/des Teams abhängt.": "I have to coordinate my work with my colleagues for the sake of the team performance.",
+            "Fehler bei meiner Tätigkeit können zu Risiken und Gefahren für Personen und/oder Sachmittel führen.": "Mistakes at my job can endanger things or people.",
+            "Wenn ich in meiner Arbeit einen Fehler gemacht habe, kann ich ihn selbst beheben.": "When I make Mistakes at work, I can correct them myself.",
+            "Zu meiner Tätigkeit gehört es, die Qualität meiner Leistung selbst zu kontrollieren.": "My tasks include controlling the quality of my own performance.",
+            "Die für meine Tätigkeit notwendigen Arbeitsmaterialien sind uneingeschränkt verfügbar.": "All the equipment I need for my job is available.",
+            "Vorgesehene Veränderungen meiner Arbeitsaufgaben/an meinem Arbeitsplatz sind mir im Allgemeinen rechtzeitig bekannt.": "I usually know about intended changes at work early enough.",
+            "Ich arbeite im Schichtsystem (2-Schicht; 3-Schicht) oder in unregelmäßigem Dienst nach Sonderregelungen (z. B. Arbeit auf Abruf ).": "I work in shifts or at irregular times.",
+            "Zu meiner Tätigkeit gehört es, Bereitschaftsdienste zu leisten.": "I have to work on call.",
+            "In meiner Arbeitstätigkeit muss ich oft nach langen Warte-/Beobachtungszeiten schnell und sicher handeln.": "After long times of waiting or watching I have to act fast and safe.",
+            "Die für meine Tätigkeit notwendigen Informationen sind uneingeschränkt verfügbar.": "All the information I need for my job is available.",
+            "Bei meiner Tätigkeit trage ich persönliche Schutzausrüstungen, die mich behindern/unbequem sind.": "My job requires protective clothing that is inconvenient.",
+            "In meiner Tätigkeit gibt es unvorhersehbare Störungen und Unterbrechungen.": "There are unforeseeable disruptions and disturbances in my job.",
+            "Im Bedarfsfall muss ich die Arbeit anderer Kollegen übernehmen.": "Sometimes I have to fulfil the tasks of colleagues.",
+            "Ich kann mich mit Kollegen und Vorgesetzten beraten und um Unterstützung bitten, wenn ich Schwierigkeiten bei der Arbeit habe.": "I can counsel with others and ask for help when I have difficulties at work.",
+            "Bei meiner Tätigkeit sind persönliche Gespräche mit Arbeitskollegen möglich.": "Private talk with colleagues is possible at work.",
+            "Ich arbeite an einem isolierten Arbeitsplatz ohne die Möglichkeit mit anderen Arbeitskollegen Kontakt zu haben.": "I work alone without contact to colleagues.",
+            "Meine ständige Anwesenheit am Arbeitsplatz ist erforderlich, auch kurzzeitiges Verlassen ist nicht möglich.": "I have to be at my workplace all the time and am not allowed to leave even for a short break.",
+            "Ich kann meinen Arbeitsplatz erst verlassen, wenn ich abgelöst werde.": "I have to wait until a college takes my place before I am allowed to leave my workplace.",
+            "Meine Tätigkeit erfordert einen häufigen Wechsel des Arbeitsortes (z. B. wechselnde Baustellen).": "I have to work at different places (e. g. construction sides).",
+            "Die Beleuchtung an meinem Arbeitsplatz ist unzureichend.": "The light at work is inadequate.",
+            "Ich arbeite ständig unter Lärm.": "I always work in a noisy environment.",
+            "Ich arbeite ständig bei sehr hohen/sehr niedrigen Temperaturen.": "I have to work where it is extremely hot/cold.",
+            "Ich arbeite überwiegend in Dunkelräumen.": "I often have to work in dark spaces.",
+            "Ich bin an einem sehr beengten Arbeitsplatz tätig.": "My workplace is very cramped.",
+            "Ich habe mit sehr unangenehm riechenden Stoffen oder extremem Schmutz zu tun.": "I have to work with stinky or extremely dirty materials.",
+            "Meine Tätigkeit erfordert häufig Auseinandersetzungen mit anderen Menschen (z. B. Kunden, Patienten, Kinder, Klienten).": "At my job I have to interact with many people (e.g. customers, kids, colleagues).",
+            "In meiner Abteilung/meinem Team verstehen sich die Kollegen im Allgemeinen gut.": "All members of my team usually get along with each other.",
+            "Die Vorgesetzten bewerten die Arbeitsleistung aller Kollegen gerecht.": "The superiors judge the performance of all colleagues fairly.",
+            "In meiner Abteilung/meinem Team werden gute Leistungen anerkannt.": "In my team good performance gets acknowledged.",
+            "Meine Vorgesetzten haben ein offenes Ohr für persönliche Probleme.": "I can speak to my superiors even about private problems.",
+            "In meiner Abteilung helfen die Kollegen, wenn jemand Schwierigkeiten hat.": "My colleagues are going to help when a team member is struggling.",
+            "Jemand hat ein offenes Ohr für Probleme auf meiner Arbeitsstelle.": "There is somebody I can talk to about problems at work."
+        },
+        "DEPARTMENTS": {
+            "Chirurgie": "Surgery",
+            "Notaufnahme": "Emergency",
+            "HNO": "ENT"
+        },
+        "POSITIONS": {
+            "Arzt": "Doctor",
+            "Pfleger": "Nurse",
+            "Verwaltung": "Management"
+        },
+        "ELSE": {
+            "CORRECT": "Correct last answer",
+            "HEADER": "Survey" 
+        },
+        "RESULTS": {
+            "RESULTS": "Auswertung",
+            "RESULT_COMPONENT_1": "Sie als Kontaktperson für das Unternehmen, erhalten die Rückmeldung der Ergebnisse der psychischen Gefährdungsbeurteilung, welche Sie bei uns in Auftrag gegeben haben. Bitte verteilen Sie diese an die intern zuständigen Personen.",
+            "RESULT_COMPONENT_2": "Neben dieser Gesamtauswertung bekommt jede Person, die an der Befragung teilgenommen hat, ein persönliches Feedback.",
+            "RESULT_COMPONENT_3": "An der Befragung zur psychischen Gefährdungsbeurteilung nahmen insgesamt {{participants}} Personen Ihres Unternehmens teil. Die Rückmeldungen ermöglichen eine anonymisierte Auswertung für die Bereiche",
+            "RESULT_COMPONENT_4": "Im Anschluss finden Sie eine Übersicht der psychischen Gefährdungsbeurteilung sowie eine detaillierte Auswertung, wenn Folgemaßnahmen empfohlen werden. Bitte bedenken Sie, dass die vorgeschlagenen Maßnahmen auf den Ergebnissen von Mittelwertanalysen beruhen. Entspricht das Ergebnis nicht Ihren Erwartungen oder meinen Sie, dass aus Ihrer Sicht wichtige Punkte nicht berücksichtigt wurden, bieten sich entweder ein unternehmensinterner Diskurs (Gesundheitsworkshop) oder eine vertiefende Analyse an. Für die Planung der Interventionen können Sie uns gern ansprechen. Wir lassen Sie nicht allein!",
+            "RESULT_COMPONENT_5": "In jedem Fall sollten Sie möglichst offen und transparent den Beschäftigten gegenüber kommunizieren, was die Ergebnisse und vor allem die weiteren Konsequenzen sind. Das hilft Ihnen auch bei der vom Gesetzgeber geforderten Evaluation der abgeleiteten Maßnahmen.",
+            "RESULT_COMPONENT_6": "Nach Empfehlungen der Gemeinsamen Deutschen Arbeitsschutzstrategie ist die nächste psychische Gefährdungsbeurteilung nach internen Umstrukturierungen oder spätestens nach 2 Jahren erforderlich.",
+            "RESULT_COMPONENT_7": "Sie haben sich dafür / dagegen entschieden von uns an die nächste psychische Gefährdungsbeurteilung erinnert zu werden. Demnach bekommen Sie (k)eine Erinnerungsemail an die uns bekannte Adresse geschickt.",
+            "RESULT_COMPONENT_8": "Wir würden uns freuen, wenn Sie mit uns zufrieden sind und wir den kommenden Weg gemeinsam gehen."
+        },
+        "RECOMMENDATIONS": {
+            "ENDWORD": "Aus den Antworten von Ihnen und Ihren Kolleg/innen werden allgemeingültige Handlungsempfehlungen abgeleitet. Das die Umfrage durchführende Unternehmen „Humangold“ wird mit Ihren Vorgesetzten abstimmen, wann und wie bestimmte Handlungsempfehlungen umgesetzt werden. Diese werden intern bei Ihnen abgestimmt und priorisiert."
+        }
+    }
+}
