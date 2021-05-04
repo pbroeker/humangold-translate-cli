@@ -1,6 +1,8 @@
 const fs = require('fs');
 const { selectPrompt } = require('./prompts');
+const readXlsxFile = require('read-excel-file/node');
 const { SourcePrompt, TargetPrompt } = require('../models/prompts.model.');
+const { error } = require('console');
 
 const getSourceFile = async function (modeString, sourcesPath, ending) {
   let sourceFiles = getFolders(sourcesPath);
@@ -48,9 +50,33 @@ const update = function (oldDataObject, newDataObject) {
   console.log('updating');
 }
 
-const add = function (oldDataObject, addDataObject) {
-  console.log('adding');
+const add = function (sourceDataObject, targetDataObject) {
+  console.log(`adding from ${sourceDataObject} to ${targetDataObject}`);
+
+  let oldTargetData = JSON.parse(fs.readFileSync(`./targets/${targetDataObject}`));
+  let addQuestions = {};
+
+  readXlsxFile(`./sources/${sourceDataObject}`)
+    .then((rows) => {
+      if (rows[1][0] === 'question' && rows[1][1] === 'id') {
+        let dataArray = rows.slice(2);
+        dataArray.forEach(row => {
+          addQuestions[row[1]] = row[0];
+        })
+      } else {
+        console.error('Error: Sourcefile has the wrong format');
+      }
+    })
+    .then(() => {
+      let newQuestionObject = { ...oldTargetData.SURVEY.QUESTIONS, ...addQuestions };
+      oldTargetData.SURVEY.QUESTIONS = newQuestionObject;
+    })
+    .then(() => {
+      let stringifiedData = JSON.stringify(oldTargetData, null, 2);
+      fs.writeFileSync(`./outputs/${targetDataObject}`, stringifiedData);
+      console.log(`successfully created new file ${targetDataObject}`);
+    })
 }
 
-module.exports = { getSourceFile, getTargetFile };
+module.exports = { getSourceFile, getTargetFile, add };
 
