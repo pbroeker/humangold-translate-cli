@@ -2,7 +2,6 @@ const fs = require('fs');
 const { selectPrompt } = require('./prompts');
 const readXlsxFile = require('read-excel-file/node');
 const { SourcePrompt, TargetPrompt } = require('../models/prompts.model.');
-const { error } = require('console');
 
 const getSourceFile = async function (modeString, sourcesPath, ending) {
   let sourceFiles = getFolders(sourcesPath);
