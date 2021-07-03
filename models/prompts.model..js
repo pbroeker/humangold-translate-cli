@@ -2,6 +2,8 @@ const operationPrompt = {
   name: 'operation',
   message: 'What do you want to do?',
   choices: [
+    // { title: 'Get survey results', description: 'Creating a result excel from existing surveys', value: 'results' },
+    // { title: 'Change questions to Ids', description: 'Changing question strings to IDs', value: 'translateJSON' },
     { title: 'Add new questions', description: 'Adding new questions to the application', value: 'add' },
     { title: 'Update questions', description: 'Changing/Updating questions from the application', value: 'update' },
     { title: 'Translate questions', description: 'Adding translations to a known language-file', value: 'translate' }

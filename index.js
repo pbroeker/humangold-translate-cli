@@ -1,6 +1,6 @@
 const { selectPrompt } = require('./utils/prompts');
 const { operationPrompt, addSourcePrompt, addTargetPrompt } = require('./models/prompts.model.');
-const { getSourceFile, getTargetFile, add } = require('./utils/utils');
+const { getSourceFile, getTargetFile, add, update, translate } = require('./utils/utils');
 
 const sourcesPath = './sources';
 const targetPath = './targets';
@@ -21,14 +21,13 @@ const updateQuestions = async function () {
   console.log('Update');
   let source = await getSourceFile('update', sourcesPath, 'xlsx');
   let target = await getTargetFile('update', targetPath, 'json');
-  
-  console.log(`source is: ${source}, target: ${target}`);
+  update(source.source, target.target);
 }
 
 const translateQuestions = async function () {
-  let source = await getSourceFile('translate', sourcesPath, 'json');
+  let source = await getSourceFile('translate', sourcesPath, 'xlsx');
   let target = await getTargetFile('translate', targetPath, 'json');
-  console.log(`source is: ${source}, target: ${target}`);
+  translate(source.source, target.target);
 }
 
 const trySwitch = function (operation) {
@@ -38,10 +37,10 @@ const trySwitch = function (operation) {
       break;
     case 'update':
       updateQuestions();
-      break;
+      break; 
     case 'translate':
       translateQuestions();
-      break;    
+      break;  
     default:
       console.log('Error: Unkown argument');
       break;

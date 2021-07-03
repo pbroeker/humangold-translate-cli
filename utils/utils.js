@@ -34,20 +34,44 @@ const createChoices = function (stringArray) {
   })
 }
 
-const createCopy = function () {
-  console.log('creating a copy');
-}
+// TODO: Implement as safety-feature at some point
+// const createCopy = function () {
+//   console.log('creating a copy');
+// }
 
-const readXLSX = function () {
-  console.log('reading XLSX');
-}
+// TODO: Implement late to make code DRY
+// const readXLSX = function () {
+//   console.log('reading XLSX');
+// }
 
-const translate = function (oldDataObject, translationObject) {
-  console.log('translating');
-}
+const update = function (sourceDataObject, targetDataObject) {
+  console.log(`updating ${targetDataObject} with questions from ${sourceDataObject}`);
+  let oldTargetData = JSON.parse(fs.readFileSync(`./targets/${targetDataObject}`));
+  let oldTargetQuestions = oldTargetData.SURVEY.QUESTIONS;
 
-const update = function (oldDataObject, newDataObject) {
-  console.log('updating');
+  readXlsxFile(`./sources/${sourceDataObject}`)
+    .then((rows) => {
+      if (rows[0][0].toLowerCase() === 'id' && rows[0][1].toLowerCase() === 'question') {
+        let dataArray = rows.slice(1);
+        dataArray.forEach(row => {
+          console.log(row[0]);
+          if (oldTargetQuestions[row[0]]) {
+            oldTargetQuestions[row[0]] = row[1];
+          }
+        })
+      } else {
+        console.error('Error: Sourcefile has the wrong format');
+      }
+    })
+    .then(() => {
+      oldTargetData.SURVEY.QUESTIONS = oldTargetQuestions;
+    })
+    .then(() => {
+      let stringifiedData = JSON.stringify(oldTargetData, null, 2);
+      fs.writeFileSync(`./outputs/${targetDataObject}`, stringifiedData);
+      console.log(`successfully created new file ${targetDataObject}`);
+    })
+    .catch(err => console.log('error when adding questions: ', err));
 }
 
 const add = function (sourceDataObject, targetDataObject) {
@@ -58,10 +82,10 @@ const add = function (sourceDataObject, targetDataObject) {
 
   readXlsxFile(`./sources/${sourceDataObject}`)
     .then((rows) => {
-      if (rows[1][0] === 'question' && rows[1][1] === 'id') {
-        let dataArray = rows.slice(2);
+      if (rows[0][0].toLowerCase() === 'id' && rows[0][1].toLowerCase() === 'question') {
+        let dataArray = rows.slice(1);
         dataArray.forEach(row => {
-          addQuestions[row[1]] = row[0];
+          addQuestions[row[0]] = row[1];
         })
       } else {
         console.error('Error: Sourcefile has the wrong format');
@@ -76,7 +100,68 @@ const add = function (sourceDataObject, targetDataObject) {
       fs.writeFileSync(`./outputs/${targetDataObject}`, stringifiedData);
       console.log(`successfully created new file ${targetDataObject}`);
     })
+    .catch(err => console.log('error when adding questions: ', err));
 }
 
-module.exports = { getSourceFile, getTargetFile, add };
+const translate = function (sourceDataObject, targetDataObject) {
+  let oldTargetData = JSON.parse(fs.readFileSync(`./targets/${targetDataObject}`));
+  let oldQuestions = oldTargetData.SURVEY.QUESTIONS;
+
+  readXlsxFile(`./sources/${sourceDataObject}`)
+    .then((rows) => {
+      if (rows[0][0].toLowerCase() === 'id' && rows[0][1].toLowerCase() === 'question') {
+        let dataArray = rows.slice(1);
+        dataArray.forEach(row => {
+          if (oldQuestions[row[0]]) {
+            oldQuestions[row[0]] = row[1];
+          }
+        })
+      } else {
+        console.error('Error: Sourcefile has the wrong format');
+      }
+    })
+    .then(() => {
+      oldTargetData.SURVEY.QUESTIONS = oldQuestions;
+    })
+    .then(() => {
+      let stringifiedData = JSON.stringify(oldTargetData, null, 2);
+      fs.writeFileSync(`./outputs/${targetDataObject}`, stringifiedData);
+      console.log(`successfully created new file ${targetDataObject}`);
+    })
+    .catch(err => console.log('error when adding questions: ', err));
+}
+
+// JUST NECESSARY when not working with IDs; 
+// SHOULD BE DELETED AT SOME POINT
+// const translateJSON = function () {
+//   let germanFile = JSON.parse(fs.readFileSync('./sources/de.json'));
+//   let englishSourceFile = JSON.parse(fs.readFileSync('./sources/en.json'));
+//   let englishTargetFile = JSON.parse(fs.readFileSync('./outputs/en.json'))
+//   let englishQuestions = englishSourceFile.SURVEY.QUESTIONS;
+//   let germanQuestions = germanFile.SURVEY.QUESTIONS;
+//   // let questionData = sourceDataObject.SURVEY.QUESTIONS;
+//   let addQuestions = {};
+
+//   for (let key in germanQuestions) {
+//     let germanString = germanQuestions[key];
+//     // console.log('german string is: ', germanQuestions[key]);
+//     if (englishTargetFile.SURVEY.QUESTIONS[key]) {
+//       if (englishQuestions[germanString]) {
+//         addQuestions[key] = englishQuestions[germanString];
+//         console.log('successfully translated a question');
+//       } else {
+//         addQuestions[key] = 'NOT TRANSLATED YET';
+//         console.log('could not translate a question');
+//       }
+//     } else {
+//       console.error('Key not available in english Version')
+//     }
+//   }
+
+//   englishTargetFile.SURVEY.QUESTIONS = addQuestions;
+//   let stringifiedData = JSON.stringify(englishTargetFile, null, 2);
+//   fs.writeFileSync('./targets/newEN.json', stringifiedData);
+// }
+
+module.exports = { getSourceFile, getTargetFile, add, update, translate };
 
